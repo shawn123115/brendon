@@ -1,0 +1,282 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    
+}
+*{
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 20px 0; /* Adjust padding */
+    background-color: green;
+}
+
+nav ul {
+    display: flex; /* Use flexbox for the list */
+    justify-content: center; /* Center the list items */
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+nav ul li {
+    margin: 0 15px; /* Horizontal spacing between links */
+}
+
+nav ul li a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth color change on hover */
+    padding: 10px;
+   
+}
+
+nav ul li a:hover {
+    color: #d9e0e1; /* Lighten color on hover */
+}
+
+
+section {
+    padding: 40px 20px;
+    margin: 10px auto;
+    max-width: 1200px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #4CAF50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#about{
+    background-color: cyan;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-content p {
+    line-height: 1.6;
+    margin: 15px 0;
+    text-align: justify;
+}
+
+.about-content img {
+    width: 100%;
+    max-width: 400px; /* Keeps the about image responsive */
+    height: 250px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border: 5px solid;
+}
+.pet-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#pets{
+    background-color: cyan;
+}
+
+.pet {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+    width: 220px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.pet img {
+    width: 200px; /* Set a fixed width */
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 8px; /* Keep the rounded corners */
+}
+
+.pet h3 {
+    color: #4CAF50;
+}
+
+.pet button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pet button:hover {
+    background-color: #45a049;
+}
+
+.pet:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background-color: black;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Previous CSS styles remain the same */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #45a049;
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+#contact{
+    background-color: cyan;
+}
+
+/* For Chrome, Safari, and Edge */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the scrollbar track */
+    border-radius: 10px; /* Rounded corners for the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4CAF50; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #45a049; /* Color on hover */
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: thin; /* Makes scrollbar thinner */
+    scrollbar-color: #4CAF50 #f1f1f1; /* Thumb color and track color */
+}
+
+/* General Styles for Mobile */
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    padding: 10px; /* Adjust padding for mobile */
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column; /* Stack links vertically on mobile */
+    padding: 0;
+}
+
+nav ul li {
+    margin: 5px 0; /* Add margin for spacing between links */
+}
+
+/* Pet Cards */
+.pet-list {
+    flex-direction: column; /* Stack pet cards vertically on mobile */
+    align-items: center; /* Center align for better appearance */
+}
+
+.pet {
+    width: 90%; /* Full width for mobile */
+    max-width: 300px; /* Limit max width for larger screens */
+    margin: 15px 0; /* Vertical margin between pet cards */
+}
+
+/* Contact Form */
+.contact-form {
+    width: 90%; /* Full width for mobile */
+    max-width: 400px; /* Limit max width */
+}
+
+.contact-info p {
+    font-size: 14px; /* Slightly smaller text on mobile */
+}
+
+/* Media Queries for Larger Screens */
+@media (min-width: 600px) {
+    nav ul {
+        flex-direction: row; /* Horizontal layout for larger screens */
+    }
+
+    .pet-list {
+        flex-direction: row; /* Horizontal layout for pet cards */
+        flex-wrap: wrap; /* Allow wrapping for larger screens */
+    }
+
+    .pet {
+        width: 220px; /* Standard width for pet cards */
+    }
+
+    .contact-form {
+        max-width: 500px; /* Wider form for larger screens */
+    }
+}
+
